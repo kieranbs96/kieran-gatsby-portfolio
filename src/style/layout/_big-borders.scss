@@ -1,0 +1,47 @@
+$border-size: 10px;
+$border-size-desktop: 20px;
+
+.big-border {
+  content: " ";
+  display: block;
+  position: fixed;
+  background: $tertiary-color;
+  z-index: 1000;
+  box-sizing: content-box;
+
+  &-left, &-right {
+    top: 0;
+    height: 100%;
+    width: $border-size;
+
+    @media (min-width: 800px) {
+      width: $border-size-desktop;
+    }
+  }
+
+  &-top, &-bottom {
+    left: 0;
+    width: 100%;
+    height: $border-size;
+
+    @media (min-width: 800px) {
+      height: $border-size-desktop;
+    }
+  }
+
+  &-top {
+    top: 0;
+  }
+
+  &-left {
+    left: 0;
+  }
+
+  &-right {
+    right: 0;
+  }
+
+  &-bottom {
+    bottom: -1px;
+  }
+}

@@ -1,15 +1,16 @@
 // COLORS
-$primary-color: #02aab0;
-$secondary-color: #00cdac;
+// $primary-color: #02aab0;
+// $secondary-color: #00cdac;
 
-// $primary-color: #7f449d;
-// $secondary-color: #793fc1;
+$primary-color: #5B6FC1;
+$secondary-color: #8D63BD;
+$tertiary-color: #756AC1;
 
 $white-color: #fff;
 
 $dark-grey: #333333;
 
-$dark-blue-text: #272341; // For Headings
+$dark-blue-text: $primary-color;
 
 // FONT SIZE
 $default-font-size: 1.6rem;
