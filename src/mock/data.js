@@ -89,7 +89,7 @@ export const experienceData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'nextjs.png',
+    img: 'nextjs.jpeg',
     title: 'Next + Keystone Shop',
     info: `A shop type app based on Next.js with Keystone as a headless CMS and GraphQL queries into the headless CMS, created as part of the Wes Bos course Advanced React.`,
     info2: '',
