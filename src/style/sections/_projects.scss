@@ -1,8 +1,9 @@
 #projects {
-  background-color: $white-color;
+  background-color: #e4e4e4;
   color: $dark-blue-text;
   margin-top: -15rem;
   padding-top: 15rem;
+  position: relative;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -74,4 +75,35 @@
       }
     }
   }
+}
+
+.wave {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  background: inherit;
+  bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: inherit;
+  left: -1.5%;
+  top: 40%;
 }
